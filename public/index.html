@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Лабораторная работа: Асинхронный Ajax</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Лабораторная работа №: Асинхронный подход к построению интерактивных интерфейсов</h1>
+  </header>
+
+  <main>
+    <form id="artistForm">
+      <label for="artistSelect">Выберите артиста:</label>
+      <select id="artistSelect" name="artist">
+        <option value="artist1">Иван Иванов</option>
+        <option value="artist2">Мария Петрова</option>
+        <option value="artist3">Алексей Смирнов</option>
+      </select>
+      <div class="buttons">
+        <button type="button" id="btnJson">Загрузить данные (JSON)</button>
+        <button type="button" id="btnText">Загрузить текст</button>
+        <button type="button" id="btnMedia">Загрузить фото и видео</button>
+      </div>
+    </form>
+
+    <section id="output">
+      <h2>Результат загрузки</h2>
+      <pre id="jsonData"></pre>
+      <div id="textData"></div>
+      <div id="mediaData"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Преподаватель: Атрощенко Н.А.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
